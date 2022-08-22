@@ -9,11 +9,8 @@ std::vector<int> read_input(const int & row_length){
 
     numbers.reserve(row_length);
 
-    int current = 0;
-
     for (int i = 0; i < row_length; ++i) {
-        std::cin >> current;
-        numbers.push_back(current);
+        std::cin >> numbers[i];
     }
 
     return numbers;
