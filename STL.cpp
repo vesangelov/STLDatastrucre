@@ -1,11 +1,13 @@
 #include <iostream>
 #include <vector>
 
-std::vector<int> read_input(int & row_length){
+std::vector<int> read_input(const int & row_length){
     /*Function in which the user defines the length of the vector
     and push all numbers in it.*/
 
     std::vector<int> numbers;
+
+    numbers.reserve(row_length);
 
     int current = 0;
 
